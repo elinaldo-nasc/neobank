@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.dashboard-nav {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+}
+
+.nav-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-username {
+    color: #ccc;
+}
+
+.logout-button {
+    background: #1976d2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.logout-button:hover {
+    background: #1565c0;
+}
+
+.dashboard-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.dashboard-top-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stats-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: span 1;
+}
+
+.stat-card {
+    border-radius: 6px;
+    padding: 1.2rem;
+}
+
+.stat-card.orange {
+    background: #1976d2;
+}
+
+.stat-card.green {
+    background: #4caf50;
+}
+
+.stat-title {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-section {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.6rem;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+.submit-button {
+    width: 100%;
+    background: #1976d2;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #1565c0;
+}
+
+.accounts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.account-card {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a !important;
+    border-radius: 6px;
+    padding: 1.2rem;
+}
+
+
+.account-type {
+    display: block;
+    font-size: 0.85rem;
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.account-number {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 0.3rem;
+}
+
+.account-holder {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.account-balance {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+.account-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+
+.action-form {
+    display: contents;
+}
+
+.action-input {
+    grid-column: span 2;
+    padding: 0.5rem;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.action-button {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.action-button.deposit {
+    background: #4caf50;
+    color: #fff;
+}
+
+.action-button.deposit:hover {
+    background: #43a047;
+}
+
+.action-button.withdraw {
+    background: #1976d2;
+    color: #fff;
+}
+
+.action-button.withdraw:hover {
+    background: #1565c0;
+}
+
+.action-button.delete {
+    background: #f44336;
+    color: #fff;
+}
+
+.action-button.delete:hover {
+    background: #d32f2f;
+}
+
+.taxa-badge {
+    padding: 0.6rem;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #4caf50;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Create Box Section */
+.create-box-section {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: span 1;
+}
+
+.create-box-title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.create-box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Export Column */
+.export-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: span 1;
+}
+
+.export-card {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    background: #2a2a2a;
+    border: 2px solid #1976d2;
+    border-radius: 6px;
+    min-height: 100px;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.export-card.csv {
+    border: 2px solid #4caf50;
+}
+
+.export-card.csv .stat-title {
+    color: #4caf50;
+}
+
+.export-card.pdf {
+    border: 2px solid #f44336;
+}
+
+.export-card.pdf .stat-title {
+    color: #f44336;
+}
+
+.export-card:hover {
+    background: #333;
+}
+
+.export-card .stat-title {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.export-column form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.empty-state {
+    color: #999;
+    text-align: center;
+    padding: 2rem;
+}
+
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.toast {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    font-weight: 500;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toast.success {
+    border-left: 4px solid #4caf50;
+    background: #1b5e20;
+    color: #fff;
+}
+
+.toast.error {
+    border-left: 4px solid #f44336;
+    background: #b71c1c;
+    color: #fff;
+}
+
+.toast-title {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.toast-message {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.limit-info {
+    display: flex;
+    align-items: center;
+}
+
+.limit-badge {
+    background: #1976d2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(245, 124, 0, 0.3);
+}
+
+/* Account Info */
+.account-info {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.taxa-info {
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .dashboard-top-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .accounts-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer styling */
+.dashboard-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #999;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    border-top: 1px solid #3a3a3a;
+}
+
+.dashboard-footer p {
+    margin: 0;
+}
+
+/* Screen reader only class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
