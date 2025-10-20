@@ -1,6 +1,6 @@
 # 🏦 NEO Bank - Sistema Bancário POO
 
-> **Segunda Atividade Final de Projeto**
+> **Segunda Atividade Final**
 
 Sistema bancário completo desenvolvido em PHP com **Programação Orientada a Objetos**, **autenticação de usuários**, **caixinhas de economia** e **exportação de relatórios**.
 
