@@ -145,7 +145,7 @@ neobank/
 ├── servicos/
 │   ├── Autenticacao.php       # Autenticação de usuários (renomeado)
 │   ├── ContaManager.php       # Gerenciamento de contas e caixinhas
-│   └── GeradorDeRelatorio.php # Exportação CSV/PDF (DI)
+│   └── GeradorDeRelatorio.php # Exportação CSV/PDF
 ├── css/
 │   ├── index.css              # Estilos da página de login/cadastro
 │   └── dashboard.css          # Estilos do painel do usuário
